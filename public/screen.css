@@ -13,6 +13,11 @@ body {
   background-color: rgb(250, 251, 252);
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
 header ul {
   display: flex;
   list-style: none;
@@ -25,8 +30,17 @@ header li {
   /* padding: .05rem; */
 }
 
+.octodexName {
+  color: black;
+}
+
+header a {
+  color: grey;
+  text-decoration: none;
+}
+
 .card {
-  margin: 1.5rem;
+  margin: 1rem;
   /* padding-right: 1rem; */
   padding: 1rem;
   display: flex;
@@ -37,9 +51,8 @@ header li {
 .octocatPic {
   border: .05rem solid rgb(207, 207, 206);
   border-radius: 1rem;
-  width: 95%;
+  width: 100%;
   height: auto;
-  padding: 1rem;
 }
 
 .cardDescription {
@@ -58,16 +71,22 @@ header li {
 }
 
 @media (min-width: 800px) {
-  body {
-    display: grid;
-    grid-template-columns: 25% 25% 25% 25%;
-    grid-template-rows: 3% 25% 25% 25%;
-  }
   header {
-    background-color: teal;
-    grid-column-start: 1;
-    grid-column-end: 5;
+    /* background-color: teal; */
+    /* grid-column-start: 1;
+    grid-column-end: 5; */
     padding: 0;
     margin: 0;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    /* grid-template-rows: 20% 20% 20% 20% 20%; */
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .cardDescription {
+    padding: 1rem 0 5rem 0;
   }
 }
