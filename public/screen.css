@@ -63,7 +63,7 @@ header a {
 }
 
 .card {
-  margin: 1rem;
+  margin: 0rem 1rem;
   /* padding-right: 1rem; */
   padding: 1rem;
   /* display: flex; */
@@ -144,7 +144,7 @@ footer {
     grid-template-columns: 25% 25% 25% 25%;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    align-content: flex-start;
   }
   .cardDescription {
     padding: 1rem 0 5rem 0;
